@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+</head>
+<body>
+
+
+        <form action="/register" method="POST" style="border:1px solid #ccc">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+                <label for="first name"><b>First name</b></label>
+                <input type="text" placeholder="Enter First name" name="firstname" required>
+                
+                <label for="last name"><b>Last name</b></label>
+                <input type="text" placeholder="Enter last name" name="lastname" required>
+                
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                
+                <label for="phone"><b>Phone</b></label>
+                <input type="number" placeholder="Enter phone" name="phone" required>
+                
+                <label for="age"><b>Age</b></label>
+                <input type="number" placeholder="Enter age" name="age" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <label for="psw-repeat"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="confirmpassword" required>
+                
+                <label for="gender"><b>Gender</b></label></br>
+                <label class="container">Male
+                <input type="radio"  name="gender" value="male"></label>
+                <label class="container">Female
+                <input type="radio"  name="gender" value="female"></label>
+                <br></br>
+
+                
+                <div class="clearfix">
+                <button type="button" class="cancelbtn" >Cancel</button>
+                <button type="submit" class="signupbtn" value="submit">Sign Up</button>
+                </div>
+  </div>
+</form>
+</body>
+</html>
